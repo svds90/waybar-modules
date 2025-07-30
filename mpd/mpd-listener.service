@@ -1,0 +1,12 @@
+[Unit]
+Description=Waybar MPD listener daemon
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.config/waybar/modules/mpd/mpd_listener.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
