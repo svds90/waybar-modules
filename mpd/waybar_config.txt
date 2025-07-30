@@ -1,0 +1,11 @@
+"custom/mpd": {
+	"format": "{} ",
+	"interval": "once",
+	"signal": 1,
+	"exec": "bash $HOME/.config/waybar/modules/mpd/mpd.sh",
+	"exec-on-event": true,
+	"on-click": "bash $HOME/.config/waybar/modules/mpd/mpd.sh toggle",
+	"on-click-right": "bash $HOME/.config/waybar/modules/mpd/mpd.sh single",
+	"on-scroll-up": "bash $HOME/.config/waybar/modules/mpd/mpd.sh next",
+	"on-scroll-down": "bash $HOME/.config/waybar/modules/mpd/mpd.sh prev"
+    }

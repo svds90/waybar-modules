@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# on-click -> toggle
-# on-click-middle ->
-# on-click-right -> single toggle
-# on-sctoll-up -> next
-# on-sctoll-down -> prev
-#
-#
-# exec mpd.sh -h socket CURRENT
-# exec-on-event mpd.sh -h socket CURRENT
-
 set -euo pipefail
 IFS=$'\n\t'
 
