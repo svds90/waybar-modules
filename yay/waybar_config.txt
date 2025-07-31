@@ -1,0 +1,8 @@
+"custom/yay": {
+    "format": "{}",
+    // "return-type": "json",
+    "interval": 600,
+    "exec": "bash $HOME/.config/waybar/modules/yay/yay.sh",
+    "exec-on-event": true,
+    "on-click": "bash $HOME/.config/waybar/modules/yay/yay.sh"
+}
