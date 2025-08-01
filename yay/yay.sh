@@ -4,7 +4,8 @@ set -euo pipefail
 IFS=$'\n\t'
 
 function get_yay_updates() {
-  yay -Qu | awk '{print $1}'
+  yay -Sy &>/dev/null || true
+  yay -Qu || true | awk '{print $1}'
 }
 
 function waybar_output() {
@@ -12,7 +13,7 @@ function waybar_output() {
   yay_updates_count=$(echo "$yay_update_list" | sed '/^$/d' | wc -l)
 
   if [[ $yay_updates_count -eq 0 ]]; then
-    echo "  0 "
+    echo " 0"
   elif [[ $yay_updates_count -gt 0 ]]; then
     tooltip=$(echo "$yay_update_list" | paste -sd ' - ' -)
 
