@@ -1,0 +1,9 @@
+"custom/ssh": {
+	"format": "{}",
+	"interval": "once",
+	"tooltip": false,
+	"signal": 25,
+	"exec": "bash $HOME/.config/waybar/modules/ssh/ssh-dproxy.sh status",
+	"exec-on-event": true,
+	"on-click": "bash $HOME/.config/waybar/modules/ssh/ssh-dproxy.sh toggle"
+    }
